@@ -1,7 +1,6 @@
 package com.moxpoc.server124;
 
 import com.moxpoc.server124.config.WebConfig;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
@@ -23,5 +22,6 @@ public class ApplicationInitializer implements WebApplicationInitializer {
         ServletRegistration.Dynamic servlet = servletContext.addServlet(DISPATCHER, new DispatcherServlet(ctx));
         servlet.addMapping("/");
         servlet.setLoadOnStartup(1);
+
     }
 }
