@@ -1,19 +1,15 @@
 package com.moxpoc.server124.entity;
 
 import org.hibernate.annotations.GenericGenerator;
-import org.springframework.data.annotation.Id;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "customer")
 public class Customer {
     @Id
     @GeneratedValue(generator = "increment")
-    @GenericGenerator(name = "increment", strategy = "increment")
+    @GenericGenerator(name = "increment", strategy = "increment" )
     private long _id;
 
     @Column(name = "first_name", nullable = false)

@@ -38,7 +38,4 @@ public class CustomerController {
     public void removeCustomer(@PathVariable long id){
         customerService.remove(id);
     }
-
-
-
 }

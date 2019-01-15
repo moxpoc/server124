@@ -3,10 +3,13 @@ package com.moxpoc.server124.service;
 import com.moxpoc.server124.entity.Executor;
 import com.moxpoc.server124.repository.ExecutorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ExecutorServiceImpl implements ExecutorService {
+
     @Autowired
     private ExecutorRepository repository;
 
